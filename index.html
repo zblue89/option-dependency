@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Option Dependency</title>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="../bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<h1>Option Dependency</h1>
+	</div>
+	<div class="body">
+		<div class="panel panel-default">
+			<div class="panel-heading"><h4>2-Level Example</h4></div>
+			<div class="panel-body">
+			    <div class="row">
+			    	<label class="form-label col-md-3">Option 1</label>
+					<div class="col-md-6">
+						<select id="example1-option1" class="form-control">
+							<option value="val1">Value 1</option>
+							<option value="val2">Value 2</option>
+							<option value="val3">Value 3</option>
+							<option value="val4">Value 4</option>
+							<option value="val5">Value 5</option>
+							<option value="val6">Value 6</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+			    	<label class="form-label col-md-3">Option 2</label>
+					<div class="col-md-6">
+						<select id="example1-option2" class="form-control">
+							<optgroup label="val1">
+								<option value="s1val1">Sub 1 Value 1</option>
+								<option value="s1val2">Sub 1 Value 2</option>
+								<option value="s1val3">Sub 1 Value 3</option>
+								<option value="s1val4">Sub 1 Value 4</option>
+								<option value="s1val5">Sub 1 Value 5</option>
+								<option value="s1val6">Sub 1 Value 6</option>
+							</optgroup>
+							<optgroup label="val2">
+								<option value="s2val1">Sub 2 Value 1</option>
+								<option value="s2val2">Sub 2 Value 2</option>
+								<option value="s2val3">Sub 2 Value 3</option>
+								<option value="s2val4">Sub 2 Value 4</option>
+								<option value="s2val5">Sub 2 Value 5</option>
+								<option value="s2val6">Sub 2 Value 6</option>
+							</optgroup>
+							<optgroup label="val3">
+								<option value="s3val1">Sub 3 Value 1</option>
+								<option value="s3val2">Sub 3 Value 2</option>
+								<option value="s3val3">Sub 3 Value 3</option>
+								<option value="s3val4">Sub 3 Value 4</option>
+								<option value="s3val5">Sub 3 Value 5</option>
+								<option value="s3val6">Sub 3 Value 6</option>
+							</optgroup>
+							<option value="soval1">Share Value 1</option>
+							<option value="soval2">Share Value 2</option>
+							<option value="soval3">Share Value 3</option>
+							<option value="soval4">Share Value 4</option>
+							<option value="soval5">Share Value 5</option>
+							<option value="soval6">Share Value 6</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading"><h4>3-Level Example</h4></div>
+			<div class="panel-body">
+			    <div class="row">
+			    	<label class="form-label col-md-3">Option 1</label>
+					<div class="col-md-6">
+						<select id="example2-option1" class="form-control">
+							<option value="val1">Value 1</option>
+							<option value="val2">Value 2</option>
+							<option value="val3">Value 3</option>
+							<option value="val4">Value 4</option>
+							<option value="val5">Value 5</option>
+							<option value="val6">Value 6</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+			    	<label class="form-label col-md-3">Option 2</label>
+					<div class="col-md-6">
+						<select id="example2-option2" class="form-control">
+							<optgroup label="val1">
+								<option value="s1val1">Sub 1 Value 1</option>
+								<option value="s1val2">Sub 1 Value 2</option>
+								<option value="s1val3">Sub 1 Value 3</option>
+								<option value="s1val4">Sub 1 Value 4</option>
+								<option value="s1val5">Sub 1 Value 5</option>
+								<option value="s1val6">Sub 1 Value 6</option>
+							</optgroup>
+							<optgroup label="val2">
+								<option value="s2val1">Sub 2 Value 1</option>
+								<option value="s2val2">Sub 2 Value 2</option>
+								<option value="s2val3">Sub 2 Value 3</option>
+								<option value="s2val4">Sub 2 Value 4</option>
+								<option value="s2val5">Sub 2 Value 5</option>
+								<option value="s2val6">Sub 2 Value 6</option>
+							</optgroup>
+							<optgroup label="val3">
+								<option value="s3val1">Sub 3 Value 1</option>
+								<option value="s3val2">Sub 3 Value 2</option>
+								<option value="s3val3">Sub 3 Value 3</option>
+								<option value="s3val4">Sub 3 Value 4</option>
+								<option value="s3val5">Sub 3 Value 5</option>
+								<option value="s3val6">Sub 3 Value 6</option>
+							</optgroup>
+							<option value="soval1">Share Value 1</option>
+							<option value="soval2">Share Value 2</option>
+							<option value="soval3">Share Value 3</option>
+							<option value="soval4">Share Value 4</option>
+							<option value="soval5">Share Value 5</option>
+							<option value="soval6">Share Value 6</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+			    	<label class="form-label col-md-3">Option 3</label>
+					<div class="col-md-6">
+						<select id="example2-option3" class="form-control">
+							<optgroup label="s1val1">
+								<option value="s4val1">Sub 4 Value 1</option>
+								<option value="s4val2">Sub 4 Value 2</option>
+								<option value="s4val3">Sub 4 Value 3</option>
+								<option value="s4val4">Sub 4 Value 4</option>
+								<option value="s4val5">Sub 4 Value 5</option>
+								<option value="s4val6">Sub 4 Value 6</option>
+							</optgroup>
+							<optgroup label="s2val2">
+								<option value="s5val1">Sub 5 Value 1</option>
+								<option value="s5val2">Sub 5 Value 2</option>
+								<option value="s5val3">Sub 5 Value 3</option>
+								<option value="s5val4">Sub 5 Value 4</option>
+								<option value="s5val5">Sub 5 Value 5</option>
+								<option value="s5val6">Sub 5 Value 6</option>
+							</optgroup>
+							<optgroup label="s3val3">
+								<option value="s6val1">Sub 6 Value 1</option>
+								<option value="s6val2">Sub 6 Value 2</option>
+								<option value="s6val3">Sub 6 Value 3</option>
+								<option value="s6val4">Sub 6 Value 4</option>
+								<option value="s6val5">Sub 6 Value 5</option>
+								<option value="s6val6">Sub 6 Value 6</option>
+							</optgroup>
+							<option value="so1val1">Share Value 1</option>
+							<option value="so1val2">Share Value 2</option>
+							<option value="so1val3">Share Value 3</option>
+							<option value="so1val4">Share Value 4</option>
+							<option value="so1val5">Share Value 5</option>
+							<option value="so1val6">Share Value 6</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-6">
+				<a href="https://www.github.com/zblue89/option-dependency">Visit GitHub</a>	
+			</div>
+			<div class="col-xs-6 text-right">
+				<p>Updated on 2015-10-05 @ zblue89</p>	
+			</div>
+		</div>
+	</div>
+</div>
+<!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+<script src="../jquery.js"></script>
+<script src="js/jquery.optionDependency.js"></script>
+<script type="text/javascript">
+$('#example1-option1').dependedBy('#example1-option2');
+$('#example2-option1').dependedBy('#example2-option2');
+$('#example2-option2').dependedBy('#example2-option3');
+</script>
+</body>
+</html>
